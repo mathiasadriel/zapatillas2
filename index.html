@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Zapatillas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+      flex: 1;
+    }
+    .card-content h3 {
+      margin: 0 0 5px;
+      font-size: 18px;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 16px;
+      margin: 8px 0;
+    }
+    .details {
+      font-size: 13px;
+      color: #555;
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0 0 10px 10px;
+    }
+    .btn:hover {
+      background: #1ebe5d;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Catálogo de Zapatillas</h1>
+  <p>Originales • Nuevas • Entregas coordinadas por WhatsApp</p>
+</header>
+
+<div class="container">
+  <div class="products">
+
+    <!-- PRODUCTO 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300" alt="Zapatilla 1">
+      <div class="card-content">
+        <h3>Nike Air Jordan 1</h3>
+        <div class="price">S/ 950</div>
+        <div class="details">Tallas: 40 - 44<br>Stock limitado</div>
+      </div>
+      <a class="btn" href="https://wa.me/51999999999?text=Hola,%20quiero%20las%20Nike%20Air%20Jordan%201" target="_blank">Pedir por WhatsApp</a>
+    </div>
+
+    <!-- PRODUCTO 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300" alt="Zapatilla 2">
+      <div class="card-content">
+        <h3>Adidas Campus</h3>
+        <div class="price">S/ 520</div>
+        <div class="details">Tallas: 39 - 43<br>Entrega inmediata</div>
+      </div>
+      <a class="btn" href="https://wa.me/51999999999?text=Hola,%20quiero%20las%20Adidas%20Campus" target="_blank">Pedir por WhatsApp</a>
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300" alt="Zapatilla 3">
+      <div class="card-content">
+        <h3>New Balance 550</h3>
+        <div class="price">S/ 680</div>
+        <div class="details">Tallas: 40 - 45<br>Pedido previo</div>
+      </div>
+      <a class="btn" href="https://wa.me/51999999999?text=Hola,%20quiero%20las%20New%20Balance%20550" target="_blank">Pedir por WhatsApp</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2026 - Catálogo de Zapatillas | Pedidos por WhatsApp
+</footer>
+
+</body>
+</html>
